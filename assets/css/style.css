@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/pw_pattern.png);
+    margin: 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #777777;
+}
+/* header including name and navigation menu */
+
+header {
+    width: 100%;
+    position: fixed;
+    margin-bottom: 40px;
+    z-index: 1;
+    border-bottom: 2px solid #cccccc;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+#logo {
+    padding: 20px;
+    position: relative;
+    left: 260px;
+    width: 200px;
+    z-index: 2;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#nav {
+    position: absolute;
+    width: 305px;
+    right: 250px;
+    top: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 0px;
+    z-index: 3;
+    background-color: #ffffff;
+    text-align: right;
+    color: lightgray;
+}
+
+a {
+    padding: 15px;
+    color: #777777;
+    cursor: pointer;
+}
+
+/* footer for all 3 pages*/
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    float: left;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    border-top: #4aaaa5 solid 5px;
+    background: #666666;
+    text-align: center;
+    color: rgb(211, 209, 209);
+    font-size: 10px;
+}
+/* main content section for all 3 pages*/
+.mainContent {
+    position: relative;
+    top: 100px;
+    width: 958px;
+    border: #dddddd solid 1px;
+    padding: 20px;
+    margin:0 auto;
+    background: #ffffff;
+    overflow: auto;
+}
+
+h1 {
+    border-bottom: 2px solid #dddddd;
+    margin-top: 0;
+    padding-bottom: 20px;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    
+}
+#imgBio {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/*container around the portfolio gallery*/
+.wrapper {
+    height: 300px;
+    width: 480px;
+}
+/*portfolio page content items*/
+.imgPortfolio {
+    width: 200px;
+    height: 150px; 
+}
+
+.gallery {
+    margin-right: 24px;
+    margin-bottom: 36px;
+    margin-left: 0;
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 150px;
+}
+
+.desc {
+    position: absolute;
+    bottom: 5px;
+    width: 200px;
+    padding: 10px 0;
+    margin: 0;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 14px;
+    text-align: center
+}
+
+/*form content items*/
+input {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: rgb(226, 226, 226) solid 2px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: rgb(226, 226, 226) solid 2px;
+    resize: vertical;   
+}
+
+input[type=submit] {
+    width: 75px;
+    margin-bottom: 50px;
+    padding: 8px;
+    background: #4aaaa5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+/* colors:
+* Regular font color (used for paragraphs and all text besides the headings): `#777777`
+* Main header background color: `#ffffff`
+* Main header border color: `#cccccc`
+* Footer background color: `#666666`
+* Main content background color: `#ffffff`
+* Main content border color: `#dddddd` */
