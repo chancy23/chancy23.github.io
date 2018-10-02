@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
 body {
     background-image: url("../images/mountainBackground.jpg");
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Arimo', sans-serif;
 }
 
 main {
