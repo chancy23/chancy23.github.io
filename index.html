@@ -25,18 +25,17 @@
     <div id="bio" class="modal">
         <div class="modal-content">
             <h4>About Chancy</h4>
-            <p>For the last 18 years I've worked as a product manager, project management support, process owner, and
-                front end supervisor
-                in the telecommunications industry. Now I'm looking to take on new challenges by learning full stack
-                web development. I'm also have
-                my project management certification and am a Certified Usability Analyst.</p>
-            <p>On a personal note, I grew up on a 1000 acre ranch in northwestern Wyoming, and now find myself
+            <p>Over the last 10 years I've worked as a product manager, project management support, and business process/tool owner
+                in the telecommunications industry. After making the difficult decision to leave a large telecom, I decided to take on a
+                new challenge of learning fullstack web development (which I recently recieved my certificaiton for). I also have
+                my Project Management certification and am a Certified Usability Analyst (which makes me triple threat!).</p>
+            <p>On a personal note, I grew up on a 1000 acre ranch in northwestern Wyoming, making me a country boy at heart. Now find myself
                 owning a 10 acre mini ranch of my own (after many years of trying to escape country living, I longed
-                for it!)
+                for it!).
                 I joke that in my spare time that I'm going to start a mini cattle ranch (you know miniature cows, and
-                wrangle them using a miniature horse and my 8 pound Morkie dog, named Charlemagne) but for now its just
+                wrangle them using a miniature horse and my 8 pound Morkie, named Charlemagne) but for now its just
                 nice
-                to have some wide open spaces.</p>
+                to have some wide open space.</p>
             <p>Besides wanting to run a mini cattle ranch, I also enjoy camping, 4 wheeling, hiking, cooking, and
                 reading (and drinking pina coladas, long walks on the beach...oh wait...).</p>
         </div>
@@ -44,7 +43,6 @@
             <a href="#!" class="modal-close waves-effect waves-teal btn-flat">Close</a>
         </div>
     </div>
-
 
     <!-- Header with Nav -->
     <nav>
@@ -54,6 +52,7 @@
                 <a href="#" data-target=mobileNav class="sidenav-trigger right"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#portfolioSection">Portfolio</a></li>
+                    <li><a href="https://drive.google.com/file/d/13tR567h5Myt0es9D-5qwcpvCJCWXuK1D/view?usp=sharing" target="_blank">Resume</a></li>
                     <li><a href="#contactInfo">Contact</a></li>
                     <li><a class="modal-trigger" href="#bio">About</a></li>
                 </ul>
@@ -62,10 +61,11 @@
     </nav>
     <!-- code to make the navbar mobile responsive -->
     <ul class="sidenav" id="mobileNav">
-        <li><a href="#portfolioSection">Portfolio</a></li>
-        <li><a href="#contactInfo">Contact</a></li>
-        <li><a class="modal-trigger" href="#bio">About</a></li>
-        <!-- <li><a class="sidenav-close" href="#!">Exit</a></li> -->
+        <li><a class="sidenav-close" href="#portfolioSection">Portfolio</a></li>
+        <li><a class="sidenav-close" href="https://drive.google.com/file/d/13tR567h5Myt0es9D-5qwcpvCJCWXuK1D/view?usp=sharing" target="_blank">Resume</a></li>
+        <li><a class="sidenav-close" href="#contactInfo">Contact</a></li>
+        <li><a class="modal-trigger sidenav-close" href="#bio">About</a></li>
+        <li><a class="sidenav-close" href="#!">Exit</a></li>
     </ul>
 
     <!-- Main Content page including a carousel -->
@@ -83,14 +83,16 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <h5 class="sliderTitle">Who Is He?</h5>
-                            <p class="sliderText">A full stack web developer, who is passoniate about making easy to use and great looking apps.</p>
+                            <p class="sliderText">A full stack web developer, who is passoniate about making easy to
+                                use and great looking apps.</p>
                             <a class="modal-trigger right sliderTrigger" href="#bio">
                                 <h6>More About Chancy</h6>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <h5 class="sliderTitle">What Has He Done?</h5>
-                            <p class="sliderText">It seems like every week brings a new challenge and something new to build. Here
+                            <p class="sliderText">It seems like every week brings a new challenge and something new to
+                                build. Here
                                 are some of samples of my work so far.</p>
                             <a class="sliderTrigger right" href="#portfolioSection">
                                 <h6>Take a Look</h6>
@@ -126,6 +128,33 @@
             <div class="col s12 m6 l3">
                 <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./assets/images/Tatu_Home_screenshot.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-2">Tatu<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-2">Tatu<i class="material-icons right">close</i></span>
+                        <p>This is a multi-page, multi-user app built with the MERN stack (MongoDB, ExpressJS, NodeJS,
+                            ReactJS) with mobile first design. It allows tattoo artists to create a profile with their
+                            information and where they can upload example images of their work. Users can then search
+                            for tattoos and tattoo artists based on
+                            certain criteria/tags (style and placement on the body) and returns images and details of
+                            the tattoo that meet the user’s criteria.
+                            Technology used: React, React Router, Express, Express Session, bcrypt, NodeJS, MongoDB,
+                            Axios, APIs, React-Materialize and Google Fonts and Icons
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/penajtokyo/tatu.git">GitHub Code</a>
+                        <a href="https://tatuappv2.herokuapp.com/">Deployed App</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="./assets/images/eventDashScreenShot.png">
                     </div>
                     <div class="card-content">
@@ -145,6 +174,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col s12 m6 l3">
                 <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -189,6 +219,84 @@
             <div class="col s12 m6 l3">
                 <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./assets/images/news_scraper_screenshot.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-2">News Scraper<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-2">News Scraper<i class="material-icons right">close</i></span>
+                        <p>An application that scrapes news articles from local news sources to get their title,
+                            summary, and the link
+                            to the original full-length article. It then saves that information to our Mongo
+                            Database and then re-renders them on our page. Users can leave and/or remove comments on
+                            each article.
+                            Technology used: HTML5, CSS3, Materialize, Google Fonts, Handlebars, JavaScript/jQuery,
+                            NodeJS, Express, MongoDB, Mongoose, Cheerios
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/chancy23/news-scraper.git">GitHub Code</a>
+                        <a href="https://newsscraper120118.herokuapp.com/">Deployed App</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./assets/images/ClickyGame_screenshot1.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-2">Clicky Game<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-2">Clicky Game<i class="material-icons right">close</i></span>
+                        <p>A memory game, built with ReactJS, where the user tries to click on every image without
+                            clicking the same image twice. Every time an image is clicked
+                            the images shuffle. If they click the same image twice the game ends, and their high score
+                            is tracked (if higher than the current
+                            previous Top Score) and the current score is reset to zero.
+                            Technology used: ReactJS and React-Bootstrap npm
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/chancy23/clicky-game.git">GitHub Code</a>
+                        <a href="https://chancy23.github.io/clicky-game">Deployed App</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./assets/images/NYTSearchScreenshot.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-2">NYT Search<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-2">NYT Search<i class="material-icons right">close</i></span>
+                        <p>This is a single page app built with the MERN stack (MongoDB, ExpressJS, NodeJS, ReactJS)
+                            and with mobile first in mind. It allows users to use a search form to find articles in the
+                            New York Times article API.
+                            The articles can be saved to the database and rendered in the Saved Articles section of the
+                            page to view later, or read by clicking
+                            the Read button in the Results area.
+                            Technology used: React, React Router, Express, NodeJS, MomentJS, MongoDB, Axios, Google
+                            Materialize and Fonts
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/chancy23/NYT-Search-React.git">GitHub Code</a>
+                        <a href="https://nytsearch010319.herokuapp.com/">Deployed App</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="./assets/images/gifTasticScreenShot.png">
                     </div>
                     <div class="card-content">
@@ -207,6 +315,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col s12 m6 l3">
                 <div class="card small">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -303,78 +412,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/news_scraper_screenshot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">News Scraper<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">News Scraper<i class="material-icons right">close</i></span>
-                        <p>An application that scrapes news articles from local news sources to get their title,
-                            summary, and the link
-                            to the original full-length article. It then saves that information to our Mongo
-                            Database and then re-renders them on our page. Users can leave and/or remove comments on
-                            each article.
-                            Technology used: HTML5, CSS3, Materialize, Google Fonts, Handlebars, JavaScript/jQuery,
-                            NodeJS, Express, MongoDB, Mongoose, Cheerios
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/news-scraper.git">GitHub Code</a>
-                        <a href="https://newsscraper120118.herokuapp.com/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/ClickyGame_screenshot1.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">Clicky Game<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">Clicky Game<i class="material-icons right">close</i></span>
-                        <p>A memory game where the user tries to click on every image without clicking the same image twice. Every time an image is clicked 
-                            the images shuffle. If they click the same image twice the game ends, and their high score is tracked (if higher than the current 
-                            previous Top Score) and the current score is reset to zero.
-                            Technology used: ReactJS and React-Bootstrap npm
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/clicky-game.git">GitHub Code</a>
-                        <a href="https://chancy23.github.io/clicky-game">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/NYTSearchScreenshot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">NYT Search<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">NYT Search<i class="material-icons right">close</i></span>
-                        <p>This is a single page app, built with React, that allows users to use a search form to find articles in the New York Times article API.
-                             The articles can be saved to the database and rendered in the Saved Articles section of the page to view later, or read by clicking
-                            the Read button in the Results area.
-                            Technology used: React, React Router, Express, NodeJS, MomentJS, MongoDB, Axios, Google Materialize and Fonts
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/NYT-Search-React.git">GitHub Code</a>
-                        <a href="https://nytsearch010319.herokuapp.com/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- Skills Area-->
         <div class="row sectionHeader">
@@ -408,7 +445,7 @@
                 <img class="systemIcons" src="./assets/images/icons/React.js_logo.png" alt="react.js icon">
                 <p class="skillsIconText">ReactJS</p>
             </div>
-             <div class="col s6 m3">
+            <div class="col s6 m3">
                 <img class="systemIcons" src="./assets/images/icons/expressjs_icon.png" alt="express.js icon">
                 <p class="skillsIconText" style="margin-top:22px">Express</p>
             </div>
@@ -437,7 +474,7 @@
         </div>
         <div class="footer-copyright center">
             <div class="container">
-                © 2018 Chancy Leath
+                © 2019 Chancy Leath
             </div>
         </div>
     </footer>
