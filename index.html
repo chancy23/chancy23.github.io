@@ -2,491 +2,487 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chancy Leath</title>
-    <link rel="shortcut icon" type="image/png" href="./assets/images/chancyleath.jpg">
-    <!-- Compiled and minified Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- swiper cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
-    <!-- google icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- fontawesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- local stylesheet -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chancy Leath</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/chancyleath.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <!-- modal for the Bio -->
-    <!-- Modal Structure -->
-    <div id="bio" class="modal">
-        <div class="modal-content">
-            <h4>About Chancy</h4>
-            <p>Over the last 10 years I've worked as a product manager, project management support, and business process/tool owner
-                in the telecommunications industry. After making the difficult decision to leave a large telecom, I decided to take on a
-                new challenge of learning fullstack web development (which I recently recieved my certificaiton for). I also have
-                my Project Management certification and am a Certified Usability Analyst (which makes me triple threat!).</p>
-            <p>On a personal note, I grew up on a 1000 acre ranch in northwestern Wyoming, making me a country boy at heart. Now find myself
-                owning a 10 acre mini ranch of my own (after many years of trying to escape country living, I longed
-                for it!).
-                I joke that in my spare time that I'm going to start a mini cattle ranch (you know miniature cows, and
-                wrangle them using a miniature horse and my 8 pound Morkie, named Charlemagne) but for now its just
-                nice
-                to have some wide open space.</p>
-            <p>Besides wanting to run a mini cattle ranch, I also enjoy camping, 4 wheeling, hiking, cooking, and
-                reading (and drinking pina coladas, long walks on the beach...oh wait...).</p>
+  <div id="bio" class="modal">
+    <div class="modal-content">
+      <h4>About Chancy</h4>
+      <p>Over the last 10 years I've worked as a product manager, project management support, and business process/tool
+        owner in the telecommunications industry. After making the difficult decision to leave a large telecom, I decided to
+        take on a new challenge of learning fullstack web development (which I recently recieved my certification for). I also have
+        my Project Management certification and am a Certified Usability Analyst (which, if you think about it, makes me triple threat!).</p>
+      <p>On a personal note, I grew up on a 1000 acre ranch in northwestern Wyoming, making me a country boy at heart.
+        Now find myself owning a 10 acre mini ranch of my own (after many years of trying to escape country living, I longed
+        for it!).
+        I joke that in my spare time that I'm going to start a mini cattle ranch (you know miniature cows, and
+        wrangle them using a miniature horse and my 8 pound Morkie, named Charlemagne) but for now its just
+        nice to have some wide open space.</p>
+      <p>Besides wanting to run a mini cattle ranch, I also enjoy camping, 4 wheeling, hiking, cooking, and
+        reading (and drinking pina coladas, long walks on the beach...oh wait...).</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-teal btn-flat">Close</a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#!" class="brand-logo">Chancy Leath</a>
+        <a href="#" data-target=mobileNav class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="https://drive.google.com/file/d/1CzFGT9-H1LiGZy21kOoRu62YSm4Q7jQZ/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a href="#contactInfo">Contact</a></li>
+          <li><a class="modal-trigger" href="#bio">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar on mobile (sideNav) -->
+  <ul class="sidenav" id="mobileNav">
+    <li><a class="sidenav-close" href="#projects">Projects</a></li>
+    <li><a class="sidenav-close" href="#skills">Skills</a></li>
+    <li><a class="sidenav-close" href="https://drive.google.com/file/d/1CzFGT9-H1LiGZy21kOoRu62YSm4Q7jQZ/view?usp=sharing"
+        target="_blank">Resume</a></li>
+    <li><a class="sidenav-close" href="#contactInfo">Contact</a></li>
+    <li><a class="modal-trigger sidenav-close" href="#bio">About</a></li>
+    <li><a class="sidenav-close" href="#!">Exit</a></li>
+  </ul>
+
+  <main class="container">
+    <div class="row">
+      <div class="col s12 m3" id="portraitArea">
+        <img id="portrait" src="./assets/images/chancyleath.jpg" alt="picture of Chancy">
+      </div>
+
+      <div class="col s12 m9" id="swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h5 class="sliderTitle">Who Is He?</h5>
+              <p class="sliderText">A full stack web developer, who is passoniate about making great looking and easy
+                to use apps.</p>
+              <a class="modal-trigger right sliderTrigger" href="#bio">
+                <h6>More About Chancy</h6>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <h5 class="sliderTitle">What Has He Done?</h5>
+              <p class="sliderText">It seems like every week brings a new challenge and something new to
+                build (and I've enjoyed it!). Here are some of samples of my work so far.</p>
+              <a class="sliderTrigger right" href="#projects">
+                <h6>Take a Look</h6>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <h5 class="sliderTitle">How Do I Contact Him?</h5>
+              <p class="sliderText">Have questions or want to find out if I'm available to build your
+                dream website, feel free to contact me. </p>
+              <a class="sliderTrigger right" href="mailto:chancyleath@gmail.com">
+                <h6>Email Me</h6>
+              </a>
+            </div>
+
+          </div>
+          <!-- pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-teal btn-flat">Close</a>
-        </div>
+      </div>
     </div>
 
-    <!-- Header with Nav -->
-    <nav>
-        <div class="nav-wrapper">
-            <div class="container">
-                <a href="#!" class="brand-logo">Chancy Leath</a>
-                <a href="#" data-target=mobileNav class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#portfolioSection">Portfolio</a></li>
-                    <li><a href="https://drive.google.com/file/d/13tR567h5Myt0es9D-5qwcpvCJCWXuK1D/view?usp=sharing" target="_blank">Resume</a></li>
-                    <li><a href="#contactInfo">Contact</a></li>
-                    <li><a class="modal-trigger" href="#bio">About</a></li>
-                </ul>
-            </div>
+    <div class="row sectionHeader" id="projects">
+      <div class="col s12">
+        <h4>Projects</h4>
+      </div>
+    </div>
+
+    <div class="row" id="portfolioSection">
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/Tatu_Home_screenshot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">Tatu<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">Tatu<i class="material-icons right">close</i></span>
+            <p>This is a multi-page, multi-user app built with the MERN stack (MongoDB, ExpressJS, NodeJS,
+              ReactJS) with mobile first design. It allows tattoo artists to create a profile with their
+              information and where they can upload example images of their work. Users can then search
+              for tattoos and tattoo artists based on
+              certain criteria/tags (style and placement on the body) and returns images and details of
+              the tattoo that meet the user’s criteria.
+              Technology used: React, React Router, Express, Express Session, bcrypt, NodeJS, MongoDB,
+              Axios, APIs, React-Materialize and Google Fonts and Icons
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/penajtokyo/tatu.git">GitHub Code</a>
+            <a href="https://tatuappv2.herokuapp.com/">Deployed App</a>
+          </div>
         </div>
-    </nav>
-    <!-- code to make the navbar mobile responsive -->
-    <ul class="sidenav" id="mobileNav">
-        <li><a class="sidenav-close" href="#portfolioSection">Portfolio</a></li>
-        <li><a class="sidenav-close" href="https://drive.google.com/file/d/13tR567h5Myt0es9D-5qwcpvCJCWXuK1D/view?usp=sharing" target="_blank">Resume</a></li>
-        <li><a class="sidenav-close" href="#contactInfo">Contact</a></li>
-        <li><a class="modal-trigger sidenav-close" href="#bio">About</a></li>
-        <li><a class="sidenav-close" href="#!">Exit</a></li>
-    </ul>
+      </div>
 
-    <!-- Main Content page including a carousel -->
-    <main class="container">
-        <div class="row">
-            <div class="col s12 m3" id="portraitArea">
-                <img id="portrait" src="./assets/images/chancyleath.jpg" alt="picture of Chancy">
-            </div>
-
-            <div class="col s12 m9" id="swiper">
-                <!-- Slider main container -->
-                <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <h5 class="sliderTitle">Who Is He?</h5>
-                            <p class="sliderText">A full stack web developer, who is passoniate about making easy to
-                                use and great looking apps.</p>
-                            <a class="modal-trigger right sliderTrigger" href="#bio">
-                                <h6>More About Chancy</h6>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <h5 class="sliderTitle">What Has He Done?</h5>
-                            <p class="sliderText">It seems like every week brings a new challenge and something new to
-                                build. Here
-                                are some of samples of my work so far.</p>
-                            <a class="sliderTrigger right" href="#portfolioSection">
-                                <h6>Take a Look</h6>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <h5 class="sliderTitle">How Do I Contact Him?</h5>
-                            <p class="sliderText">Have questions or want to find out if I'm available to build your
-                                dream website, feel free to contact me. </p>
-                            <a class="sliderTrigger right" href="mailto:chancyleath@gmail.com">
-                                <h6>Email Me</h6>
-                            </a>
-                        </div>
-
-                    </div>
-                    <!-- pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/eventDashScreenShot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">Event Dash<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">Event Dash<i class="material-icons right">close</i></span>
+            <p>Dashboard app to create and keep track of activities and events with your group (or groups)
+              of friends all in one place, regardless of the platform your group(s) use. Technology used:
+              HTML5, CSS3, Materialize,
+              Google Fonts, JavaScript/jQuery, Firebase (DB and Authentication), APIs (Smarty Streets,
+              Google, Twitter).</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/Event-Dash.git">GitHub Code</a>
+            <a href="https://chancy23.github.io/Event-Dash/">Deployed App</a>
+          </div>
         </div>
+      </div>
 
-        <!-- Portfolio Area-->
-        <div class="row sectionHeader">
-            <div class="col s12">
-                <h4>Portfolio of Projects</h4>
-            </div>
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/crystalCollectorScreenShot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">Crystal Collector<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">Crystal Collector<i class="material-icons right">close</i></span>
+            <p>A fun game, where the goal is to match the target number by collecting the exact number of
+              gems. Technology used: HTML5, CSS3, Bootstrap, Google Fonts, Javascript/jQuery</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/CrystalCollector.git">GitHub Code</a>
+            <a href="https://chancy23.github.io/CrystalCollector/">Deployed App</a>
+          </div>
         </div>
-
-        <div class="row" id="portfolioSection">
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/Tatu_Home_screenshot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">Tatu<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">Tatu<i class="material-icons right">close</i></span>
-                        <p>This is a multi-page, multi-user app built with the MERN stack (MongoDB, ExpressJS, NodeJS,
-                            ReactJS) with mobile first design. It allows tattoo artists to create a profile with their
-                            information and where they can upload example images of their work. Users can then search
-                            for tattoos and tattoo artists based on
-                            certain criteria/tags (style and placement on the body) and returns images and details of
-                            the tattoo that meet the user’s criteria.
-                            Technology used: React, React Router, Express, Express Session, bcrypt, NodeJS, MongoDB,
-                            Axios, APIs, React-Materialize and Google Fonts and Icons
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/penajtokyo/tatu.git">GitHub Code</a>
-                        <a href="https://tatuappv2.herokuapp.com/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/eventDashScreenShot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">Event Dash<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">Event Dash<i class="material-icons right">close</i></span>
-                        <p>Dashboard app to create and keep track of activities and events with your group (or groups)
-                            of friends all in one place, regardless of the platform your group(s) use. Technology used:
-                            HTML5, CSS3, Materialize,
-                            Google Fonts, JavaScript/jQuery, Firebase (DB and Authentication), APIs (Smarty Streets,
-                            Google, Twitter).</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/Event-Dash.git">GitHub Code</a>
-                        <a href="https://chancy23.github.io/Event-Dash/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/crystalCollectorScreenShot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">Crystal Collector<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">Crystal Collector<i class="material-icons right">close</i></span>
-                        <p>A fun game, where the goal is to match the target number by collecting the exact number of
-                            gems. Technology used: HTML5, CSS3, Bootstrap, Google Fonts, Javascript/jQuery</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/CrystalCollector.git">GitHub Code</a>
-                        <a href="https://chancy23.github.io/CrystalCollector/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/trainTimesScreenShot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">Train Times<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">Train Times<i class="material-icons right">close</i></span>
-                        <p>Interactive app where a user can add a train's frequency and starting time and
-                            then see the train info, including next arrival time and minutes to next arrival, as well
-                            as previously added trains. Technology used: HTML5, CSS3, Bootstrap, Google Fonts,
-                            Javascript/jQuery, MomentJS, Firebase</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/TrainTimes.git">GitHub Code</a>
-                        <a href="https://chancy23.github.io/TrainTimes/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/news_scraper_screenshot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">News Scraper<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">News Scraper<i class="material-icons right">close</i></span>
-                        <p>An application that scrapes news articles from local news sources to get their title,
-                            summary, and the link
-                            to the original full-length article. It then saves that information to our Mongo
-                            Database and then re-renders them on our page. Users can leave and/or remove comments on
-                            each article.
-                            Technology used: HTML5, CSS3, Materialize, Google Fonts, Handlebars, JavaScript/jQuery,
-                            NodeJS, Express, MongoDB, Mongoose, Cheerios
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/news-scraper.git">GitHub Code</a>
-                        <a href="https://newsscraper120118.herokuapp.com/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/ClickyGame_screenshot1.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">Clicky Game<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">Clicky Game<i class="material-icons right">close</i></span>
-                        <p>A memory game, built with ReactJS, where the user tries to click on every image without
-                            clicking the same image twice. Every time an image is clicked
-                            the images shuffle. If they click the same image twice the game ends, and their high score
-                            is tracked (if higher than the current
-                            previous Top Score) and the current score is reset to zero.
-                            Technology used: ReactJS and React-Bootstrap npm
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/clicky-game.git">GitHub Code</a>
-                        <a href="https://chancy23.github.io/clicky-game">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/NYTSearchScreenshot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">NYT Search<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">NYT Search<i class="material-icons right">close</i></span>
-                        <p>This is a single page app built with the MERN stack (MongoDB, ExpressJS, NodeJS, ReactJS)
-                            and with mobile first in mind. It allows users to use a search form to find articles in the
-                            New York Times article API.
-                            The articles can be saved to the database and rendered in the Saved Articles section of the
-                            page to view later, or read by clicking
-                            the Read button in the Results area.
-                            Technology used: React, React Router, Express, NodeJS, MomentJS, MongoDB, Axios, Google
-                            Materialize and Fonts
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/NYT-Search-React.git">GitHub Code</a>
-                        <a href="https://nytsearch010319.herokuapp.com/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/gifTasticScreenShot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">GIFreakingTastic<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">GIFreakingTastic<i class="material-icons right">close</i></span>
-                        <p>A fun app where users can click on a button to see GIFs that fit that category.
-                            Users can also add their own buttons and see those GIFs. GIFs are loaded as a still image
-                            and become animated by clicking the image. Technology Used: HTML5, CSS3, JavaScript/jQuery,
-                            API, Bootstrap and Font Awesome Icons</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/gifTastic.git">GitHub Code</a>
-                        <a href="https://chancy23.github.io/gifTastic/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/liriNodeAppScreenshot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">LIRI Bot (CLI)<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">LIRI Bot<i class="material-icons right">close</i></span>
-                        <p>A CLI (Command Line Interface) app, using Node.js, allows users to input commands to recieve
-                            results from Spotify (songs),
-                            Open Move Database (movies), and Bands In Town (concerts). To watch a a video demo or see
-                            full size images of the
-                            app, see the ReadMe file on GitHub. Technology used: NodeJS, MomentJS, NPM (dotenv,
-                            request)</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/liri-node-app.git">GitHub Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/bamazonScreenshot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">Bamazon (CLI)<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">Bamazon<i class="material-icons right">close</i></span>
-                        <p>A CLI (Command Line Interface) app that simulates an online ordering app using Node.js and a
-                            MySQL database. A customer can view items and then place an order
-                            by a product ID. There are also management roles to maintain the store (add inventory or
-                            departments, see profits, etc). Technology used: NPM (inquirer, cli-table, mysql packages)
-                            and MySQL. To see full descriptions, images, and video Demo see the ReadMe file on
-                            GitHub.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/bamazon.git">GitHub Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/friendfinder_screenshot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">Friend Finder<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">Friend Finder<i class="material-icons right">close</i></span>
-                        <p>An app that finds user's most compatible friends, among other users of the app, based on a
-                            10 question survey. Once users complete the
-                            survey, they are presented with their match's name and picture. As more users participate
-                            the variety of matches increases. Technology used: NodeJS, ExpressJs, HTML5, CSS3,
-                            Bootstrap, Font Awesome Icons
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/friend-finder.git">GitHub Code</a>
-                        <a href="https://friend-finder102918.herokuapp.com/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/images/burgerbeast_screenshot.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-2">Eat Da Burger<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-2">Eat Da Burger<i class="material-icons right">close</i></span>
-                        <p>This application allows users to enter and track what burgers they want to eat and/or have
-                            eaten.
-                            It has a simple user interface with the burgers that the user wants to devour on the left,
-                            and what burgers
-                            they have devoured on the right. At the bottom of the screen there is an input section to
-                            add more burgers to the app.
-                            Technology used: HTML5, CSS3, Bootstrap, Google Fonts, Handlebars, JavaScript/jQuery,
-                            NodeJS, Express, MySQL
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://github.com/chancy23/burger-beast.git">GitHub Code</a>
-                        <a href="https://burger-beast110518.herokuapp.com/">Deployed App</a>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/trainTimesScreenShot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">Train Times<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">Train Times<i class="material-icons right">close</i></span>
+            <p>Interactive app where a user can add a train's frequency and starting time and
+              then see the train info, including next arrival time and minutes to next arrival, as well
+              as previously added trains. Technology used: HTML5, CSS3, Bootstrap, Google Fonts,
+              Javascript/jQuery, MomentJS, Firebase</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/TrainTimes.git">GitHub Code</a>
+            <a href="https://chancy23.github.io/TrainTimes/">Deployed App</a>
+          </div>
         </div>
-        <!-- Skills Area-->
-        <div class="row sectionHeader">
-            <div class="col s12">
-                <h4>Skills</h4>
-            </div>
-        </div>
+      </div>
 
-        <div class="row" id="skillsSection">
-            <div class="col s6 m3">
-                <img class="systemIcons" src="./assets/images/icons/html5.png" alt="html5 icon">
-                <p class="skillsIconText">HTML5</p>
-            </div>
-            <div class="col s6 m3">
-                <img class="systemIcons" style="height:75px" src="./assets/images/icons/css3_icon.png" alt="css3 icon">
-                <p class="skillsIconText">CSS3</p>
-            </div>
-            <div class="col s6 m3">
-                <img class="systemIcons" src="./assets/images/icons/javascript.png" alt="js icon">
-                <p class="skillsIconText">JavaScript</p>
-            </div>
-            <div class="col s6 m3">
-                <img class="systemIcons" src="./assets/images/icons/GitHub.png" alt="github icon">
-                <p class="skillsIconText">GitHub</p>
-            </div>
-            <div class="col s6 m3">
-                <img class="systemIcons" src="./assets/images/icons/nodejs-new-pantone-black.png" alt="node.js icon">
-                <p class="skillsIconText">NodeJS</p>
-            </div>
-            <div class="col s6 m3">
-                <img class="systemIcons" src="./assets/images/icons/React.js_logo.png" alt="react.js icon">
-                <p class="skillsIconText">ReactJS</p>
-            </div>
-            <div class="col s6 m3">
-                <img class="systemIcons" src="./assets/images/icons/expressjs_icon.png" alt="express.js icon">
-                <p class="skillsIconText" style="margin-top:22px">Express</p>
-            </div>
-            <div class="col s6 m3">
-                <img class="systemIcons" src="./assets/images/icons/npm_icon.png" alt="npm icon">
-                <p class="skillsIconText" style="margin-top:20px">NPM</p>
-            </div>
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/news_scraper_screenshot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">News Scraper<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">News Scraper<i class="material-icons right">close</i></span>
+            <p>An application that scrapes news articles from local news sources to get their title,
+              summary, and the link
+              to the original full-length article. It then saves that information to our Mongo
+              Database and then re-renders them on our page. Users can leave and/or remove comments on
+              each article.
+              Technology used: HTML5, CSS3, Materialize, Google Fonts, Handlebars, JavaScript/jQuery,
+              NodeJS, Express, MongoDB, Mongoose, Cheerios
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/news-scraper.git">GitHub Code</a>
+            <a href="https://newsscraper120118.herokuapp.com/">Deployed App</a>
+          </div>
         </div>
-    </main>
+      </div>
 
-    <!-- Footer with contact Info and copyright -->
-    <footer class="page-footer" id="contactInfo">
-        <div class="container">
-            <div class="row">
-                <div class="col m4 s12">
-                    <h5 class="white-text">Location</h5>
-                    <p>Croydon, Utah 84018</p>
-                </div>
-                <div class="col m6 s12">
-                    <h5 class="white-text">Connect With Me</h5>
-                    <a class="contactIcon" href="mailto:chancyleath@gmail.com"><i class="fa fa-envelope"></i></a>
-                    <a class="contactIcon" href="https://www.linkedin.com/in/chancy-leath"><i class="fa fa-linkedin-square"></i></a>
-                    <a class="contactIcon" href="https://github.com/chancy23"><i class="fa fa-github-square"></i></a>
-                </div>
-            </div>
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/ClickyGame_screenshot1.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">Clicky Game<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">Clicky Game<i class="material-icons right">close</i></span>
+            <p>A memory game, built with ReactJS, where the user tries to click on every image without
+              clicking the same image twice. Every time an image is clicked
+              the images shuffle. If they click the same image twice the game ends, and their high score
+              is tracked (if higher than the current
+              previous Top Score) and the current score is reset to zero.
+              Technology used: ReactJS and React-Bootstrap npm
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/clicky-game.git">GitHub Code</a>
+            <a href="https://chancy23.github.io/clicky-game">Deployed App</a>
+          </div>
         </div>
-        <div class="footer-copyright center">
-            <div class="container">
-                © 2019 Chancy Leath
-            </div>
-        </div>
-    </footer>
+      </div>
 
-    <!-- jquery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Compiled and minified JavaScript for materialize-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- swiper cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-    <!-- local javascript -->
-    <script src="./assets/javascript/logic.js"></script>
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/NYTSearchScreenshot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">NYT Search<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">NYT Search<i class="material-icons right">close</i></span>
+            <p>This is a single page app built with the MERN stack (MongoDB, ExpressJS, NodeJS, ReactJS)
+              and with mobile first in mind. It allows users to use a search form to find articles in the
+              New York Times article API.
+              The articles can be saved to the database and rendered in the Saved Articles section of the
+              page to view later, or read by clicking
+              the Read button in the Results area.
+              Technology used: React, React Router, Express, NodeJS, MomentJS, MongoDB, Axios, Google
+              Materialize and Fonts
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/NYT-Search-React.git">GitHub Code</a>
+            <a href="https://nytsearch010319.herokuapp.com/">Deployed App</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/burgerbeast_screenshot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">Eat Da Burger<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">Eat Da Burger<i class="material-icons right">close</i></span>
+            <p>This application allows users to enter and track what burgers they want to eat and/or have
+              eaten.
+              It has a simple user interface with the burgers that the user wants to devour on the left,
+              and what burgers
+              they have devoured on the right. At the bottom of the screen there is an input section to
+              add more burgers to the app.
+              Technology used: HTML5, CSS3, Bootstrap, Google Fonts, Handlebars, JavaScript/jQuery,
+              NodeJS, Express, MySQL
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/burger-beast.git">GitHub Code</a>
+            <a href="https://burger-beast110518.herokuapp.com/">Deployed App</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/gifTasticScreenShot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">GIFreakingTastic<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">GIFreakingTastic<i class="material-icons right">close</i></span>
+            <p>A fun app where users can click on a button to see GIFs that fit that category.
+              Users can also add their own buttons and see those GIFs. GIFs are loaded as a still image
+              and become animated by clicking the image. Technology Used: HTML5, CSS3, JavaScript/jQuery,
+              API, Bootstrap and Font Awesome Icons</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/gifTastic.git">GitHub Code</a>
+            <a href="https://chancy23.github.io/gifTastic/">Deployed App</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/liriNodeAppScreenshot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">LIRI Bot (CLI)<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">LIRI Bot<i class="material-icons right">close</i></span>
+            <p>A CLI (Command Line Interface) app, using Node.js, allows users to input commands to recieve
+              results from Spotify (songs),
+              Open Move Database (movies), and Bands In Town (concerts). To watch a a video demo or see
+              full size images of the
+              app, see the ReadMe file on GitHub. Technology used: NodeJS, MomentJS, NPM (dotenv,
+              request)</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/liri-node-app.git">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/bamazonScreenshot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">Bamazon (CLI)<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">Bamazon<i class="material-icons right">close</i></span>
+            <p>A CLI (Command Line Interface) app that simulates an online ordering app using Node.js and a
+              MySQL database. A customer can view items and then place an order
+              by a product ID. There are also management roles to maintain the store (add inventory or
+              departments, see profits, etc). Technology used: NPM (inquirer, cli-table, mysql packages)
+              and MySQL. To see full descriptions, images, and video Demo see the ReadMe file on
+              GitHub.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/bamazon.git">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./assets/images/friendfinder_screenshot.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-2">Friend Finder<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-2">Friend Finder<i class="material-icons right">close</i></span>
+            <p>An app that finds user's most compatible friends, among other users of the app, based on a
+              10 question survey. Once users complete the
+              survey, they are presented with their match's name and picture. As more users participate
+              the variety of matches increases. Technology used: NodeJS, ExpressJs, HTML5, CSS3,
+              Bootstrap, Font Awesome Icons
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/chancy23/friend-finder.git">GitHub Code</a>
+            <a href="https://friend-finder102918.herokuapp.com/">Deployed App</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row sectionHeader" id="skills">
+      <div class="col s12">
+        <h4>Skills</h4>
+      </div>
+    </div>
+
+    <div class="row skillsSection">
+      <div class="col s6 m3">
+        <img class="systemIcons" src="./assets/images/icons/html5.png" alt="html5 icon">
+        <p class="skillsIconText">HTML5</p>
+      </div>
+      <div class="col s6 m3">
+        <img class="systemIcons" style="height:75px" src="./assets/images/icons/css3_icon.png" alt="css3 icon">
+        <p class="skillsIconText">CSS3</p>
+      </div>
+      <div class="col s6 m3">
+        <img class="systemIcons" src="./assets/images/icons/javascript.png" alt="js icon">
+        <p class="skillsIconText">JavaScript</p>
+      </div>
+      <div class="col s6 m3">
+        <img class="systemIcons" src="./assets/images/icons/React.js_logo.png" alt="react.js icon">
+        <p class="skillsIconText">ReactJS</p>
+      </div>
+    </div>
+    <div class="row skillsSection">
+      <div class="col s6 m3">
+        <img class="systemIcons" src="./assets/images/icons/mysql-workbench-icon.png" alt="mysql icon">
+        <p class="skillsIconText">MySQL</p>
+      </div>
+      <div class="col s6 m3">
+        <img class="systemIcons" src="./assets/images/icons/mongodb_icon.png" alt="mongodb icon">
+        <p class="skillsIconText">MongoDB</p>
+      </div>
+
+      <div class="col s6 m3">
+        <img class="systemIcons" src="./assets/images/icons/nodejs-new-pantone-black.png" alt="node.js icon" style="margin-top:20px">
+        <p class="skillsIconText" style="margin-top:10px">NodeJS</p>
+      </div>
+      <div class="col s6 m3">
+        <img class="systemIcons" src="./assets/images/icons/expressjs_icon.png" alt="express.js icon" style="margin-top:27px">
+        <p class="skillsIconText" style="margin-top:24px">Express</p>
+      </div>
+    </div>
+    <div class="row skillsSection">
+      <div class="col s6 m3">
+        <img class="systemIcons" src="./assets/images/icons/npm_icon.png" alt="npm icon" style="margin-top:25px">
+        <p class="skillsIconText" style="margin-top:20px">NPM</p>
+      </div>
+      <div class="col s6 m3">
+        <img class="systemIcons" src="./assets/images/icons/GitHub.png" alt="github icon">
+        <p class="skillsIconText">GitHub</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer" id="contactInfo">
+    <div class="container">
+      <div class="row">
+        <div class="col m4 s12">
+          <h5 class="white-text">Location</h5>
+          <p>Croydon, Utah 84018</p>
+        </div>
+        <div class="col m6 s12">
+          <h5 class="white-text">Connect With Me</h5>
+          <a class="contactIcon" href="mailto:chancyleath@gmail.com"><i class="fa fa-envelope"></i></a>
+          <a class="contactIcon" href="https://www.linkedin.com/in/chancy-leath"><i class="fa fa-linkedin-square"></i></a>
+          <a class="contactIcon" href="https://github.com/chancy23"><i class="fa fa-github-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright center">
+      <div class="container">
+        © 2019 Chancy Leath
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="./assets/javascript/logic.js"></script>
 </body>
 
 </html>
