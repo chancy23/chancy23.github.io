@@ -3,42 +3,24 @@ $(document).ready(function () {
   $(".modal").modal();
   //initialize sidenav
   $("#mobileNav").sidenav();
+  //parallax
+  $('.parallax').parallax();
 
-  //swiper and its customization
-  var mySwiper = new Swiper(".swiper-container", {
-    // Optional parameters
-    loop: true,
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: true,
-    },
-    effect: "flip",
-    grabCursor: true,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  //for typed.js elements
+  var typed = new Typed("#typedHeader", {
+    strings: ["Hi, I'm Chancy..."],
+    startDelay: 1000,
+    typeSpeed: 30,
+    showCursor: false
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  var typed2 = new Typed("#typed", {
+    strings: ["Full Stack Web Developer", "Certified Usability Analyst", "Certified Associate in Project Management"],
+    startDelay: 2500,
+    typeSpeed: 40,
+    fadeOut: true,
+    loop: true
+  });
 
 
 })

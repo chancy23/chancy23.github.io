@@ -62,57 +62,59 @@
     <li><a class="sidenav-close" href="#!">Exit</a></li>
   </ul>
 
-  <main class="container">
-    <div class="row">
-      <div class="col s12 m3" id="portraitArea">
-        <img id="portrait" src="./assets/images/chancyleath.jpg" alt="picture of Chancy">
-      </div>
-
-      <div class="col s12 m9" id="swiper">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <h5 class="sliderTitle">Who Is He?</h5>
-              <p class="sliderText">A full stack web developer, who is passoniate about making great looking and easy
-                to use apps.</p>
-              <a class="modal-trigger right sliderTrigger" href="#bio">
-                <h6>More About Chancy</h6>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <h5 class="sliderTitle">What Has He Done?</h5>
-              <p class="sliderText">It seems like every week brings a new challenge and something new to
-                build (and I've enjoyed it!). Here are some of samples of my work so far.</p>
-              <a class="sliderTrigger right" href="#projects">
-                <h6>Take a Look</h6>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <h5 class="sliderTitle">How Do I Contact Him?</h5>
-              <p class="sliderText">Have questions or want to find out if I'm available to build your
-                dream website, feel free to contact me. </p>
-              <a class="sliderTrigger right" href="mailto:chancyleath@gmail.com">
-                <h6>Email Me</h6>
-              </a>
-            </div>
-
+  <div class="section white">
+    <div class="row container">
+      <div class="col s12 m4" id="portraitArea">
+        <img id="portrait" class="circle" src="./assets/images/chancyleath.jpg" alt="picture of Chancy">
+        <div class="row" style="margin-bottom:0; margin-top:2%">
+          <div class="col s12">
+            <ul id="contactInfoList">
+              <li class="contactInfoListItem">
+                <a href="mailto:chancyleath@gmail.com">
+                  <span class="listSpan"></span>
+                  <span class="listSpan"></span>
+                  <span class="listSpan"></span>
+                  <span class="listSpan"></span>
+                  <span class="fa fa-envelope listSpan"></span>
+                </a>
+              </li>
+              <li class="contactInfoListItem">
+                <a href="https://www.linkedin.com/in/chancy-leath">
+                    <span class="listSpan"></span>
+                    <span class="listSpan"></span>
+                    <span class="listSpan"></span>
+                    <span class="listSpan"></span>
+                  <span class="fa fa-linkedin-square listSpan"></span>
+                </a>
+              </li>
+              <li class="contactInfoListItem">
+                <a href="https://github.com/chancy23">
+                    <span class="listSpan"></span>
+                    <span class="listSpan"></span>
+                    <span class="listSpan"></span>
+                    <span class="listSpan"></span>
+                  <span class="fa fa-github-square listSpan"></span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <!-- pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
+      
+      <div class="col s12 m8 grey-text text-darken-2" id="typedArea">
+        <h4><span id="typedHeader"></span></h4>
+        <h5><span id="typed"></span></h5>
+      </div> 
     </div>
+  </div>
 
-    <div class="row sectionHeader" id="projects">
-      <div class="col s12">
-        <h4>Projects</h4>
-      </div>
-    </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="./assets/images/fog-in-trees.jpg"></div>
+  </div>
 
-    <div class="row" id="portfolioSection">
+  <div class="section white" id="projects">
+    <div class="row container">
+      <h3 class="header grey-text text-darken-2">Projects</h3>
       <div class="col s12 m6 l3">
         <div class="card small">
           <div class="card-image waves-effect waves-block waves-light">
@@ -401,61 +403,63 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="row sectionHeader" id="skills">
-      <div class="col s12">
-        <h4>Skills</h4>
-      </div>
-    </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="./assets/images/mountains-wildflowers.jpg"></div>
+  </div>
 
-    <div class="row skillsSection">
-      <div class="col s6 m3">
-        <img class="systemIcons" src="./assets/images/icons/html5.png" alt="html5 icon">
-        <p class="skillsIconText">HTML5</p>
+  <div class="section white" id="skills">
+    <div class="row container">
+      <h3 class="header grey-text text-darken-2">Skills</h3>
+      <div class="row skillsSection">
+        <div class="col s6 m3">
+          <img class="systemIcons" src="./assets/images/icons/html5.png" alt="html5 icon">
+          <p class="skillsIconText">HTML5</p>
+        </div>
+        <div class="col s6 m3">
+          <img class="systemIcons" style="height:75px" src="./assets/images/icons/css3_icon.png" alt="css3 icon">
+          <p class="skillsIconText">CSS3</p>
+        </div>
+        <div class="col s6 m3">
+          <img class="systemIcons" src="./assets/images/icons/javascript.png" alt="js icon">
+          <p class="skillsIconText">JavaScript</p>
+        </div>
+        <div class="col s6 m3">
+          <img class="systemIcons" src="./assets/images/icons/React.js_logo.png" alt="react.js icon" style="margin-top:8px">
+          <p class="skillsIconText">ReactJS</p>
+        </div>
       </div>
-      <div class="col s6 m3">
-        <img class="systemIcons" style="height:75px" src="./assets/images/icons/css3_icon.png" alt="css3 icon">
-        <p class="skillsIconText">CSS3</p>
+      <div class="row skillsSection">
+        <div class="col s6 m3">
+          <img class="systemIcons" src="./assets/images/icons/mysql-workbench-icon.png" alt="mysql icon">
+          <p class="skillsIconText">MySQL</p>
+        </div>
+        <div class="col s6 m3">
+          <img class="systemIcons" src="./assets/images/icons/mongodb_icon.png" alt="mongodb icon">
+          <p class="skillsIconText">MongoDB</p>
+        </div>
+        <div class="col s6 m3">
+          <img class="systemIcons" src="./assets/images/icons/nodejs-new-pantone-black.png" alt="node.js icon" style="margin-top:20px">
+          <p class="skillsIconText" style="margin-top:10px">NodeJS</p>
+        </div>
+        <div class="col s6 m3">
+          <img class="systemIcons" src="./assets/images/icons/expressjs_icon.png" alt="express.js icon" style="margin-top:27px">
+          <p class="skillsIconText" style="margin-top:24px">Express</p>
+        </div>
       </div>
-      <div class="col s6 m3">
-        <img class="systemIcons" src="./assets/images/icons/javascript.png" alt="js icon">
-        <p class="skillsIconText">JavaScript</p>
-      </div>
-      <div class="col s6 m3">
-        <img class="systemIcons" src="./assets/images/icons/React.js_logo.png" alt="react.js icon" style="margin-top:8px">
-        <p class="skillsIconText">ReactJS</p>
+      <div class="row skillsSection">
+        <div class="col s6 m3">
+          <img class="systemIcons" src="./assets/images/icons/npm_icon.png" alt="npm icon" style="margin-top:25px">
+          <p class="skillsIconText" style="margin-top:20px">NPM</p>
+        </div>
+        <div class="col s6 m3">
+          <img class="systemIcons" src="./assets/images/icons/GitHub.png" alt="github icon">
+          <p class="skillsIconText">GitHub</p>
+        </div>
       </div>
     </div>
-    <div class="row skillsSection">
-      <div class="col s6 m3">
-        <img class="systemIcons" src="./assets/images/icons/mysql-workbench-icon.png" alt="mysql icon">
-        <p class="skillsIconText">MySQL</p>
-      </div>
-      <div class="col s6 m3">
-        <img class="systemIcons" src="./assets/images/icons/mongodb_icon.png" alt="mongodb icon">
-        <p class="skillsIconText">MongoDB</p>
-      </div>
-
-      <div class="col s6 m3">
-        <img class="systemIcons" src="./assets/images/icons/nodejs-new-pantone-black.png" alt="node.js icon" style="margin-top:20px">
-        <p class="skillsIconText" style="margin-top:10px">NodeJS</p>
-      </div>
-      <div class="col s6 m3">
-        <img class="systemIcons" src="./assets/images/icons/expressjs_icon.png" alt="express.js icon" style="margin-top:27px">
-        <p class="skillsIconText" style="margin-top:24px">Express</p>
-      </div>
-    </div>
-    <div class="row skillsSection">
-      <div class="col s6 m3">
-        <img class="systemIcons" src="./assets/images/icons/npm_icon.png" alt="npm icon" style="margin-top:25px">
-        <p class="skillsIconText" style="margin-top:20px">NPM</p>
-      </div>
-      <div class="col s6 m3">
-        <img class="systemIcons" src="./assets/images/icons/GitHub.png" alt="github icon">
-        <p class="skillsIconText">GitHub</p>
-      </div>
-    </div>
-  </main>
+  </div>
 
   <footer class="page-footer" id="contactInfo">
     <div class="container">
@@ -481,7 +485,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="./assets/javascript/logic.js"></script>
 </body>
 
