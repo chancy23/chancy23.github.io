@@ -141,7 +141,31 @@ body {
     color: #73AACC;
 }
 
+/* resume page */
+#resume {
+    display: flex;
+    width: 80%;
+}
+
+/* #contact {
+    width: 300px;
+    margin-right: 5%;
+} */
+
+#resumePortrait {
+    width: 100%;
+    height: auto;
+}
+
+
 /* better readablity on small screen */
+@media only screen and (max-width: 1024px) {
+    #resume {
+        width: 95%;
+    }
+}
+
+
 @media only screen and (max-width: 992px) {
     #portrait {
         max-width: 100%;

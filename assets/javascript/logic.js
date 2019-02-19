@@ -3,7 +3,7 @@ $(document).ready(function () {
   $(".modal").modal();
   //initialize sidenav
   $("#mobileNav").sidenav();
-  //parallax
+  //materialize parallax
   $('.parallax').parallax();
 
   //for typed.js elements
@@ -22,5 +22,21 @@ $(document).ready(function () {
     loop: true
   });
 
+});
 
-})
+//resume customer parallax
+window.addEventListener('scroll', function (e) {
+  const target = document.querySelectorAll('.scroll');
+
+  let index = 0, length = target.length;
+  for (index; index < length; index++) {
+    var positionY = window.pageYOffset * target[index].dataset.ratey;
+    if (target[index].dataset.direction === 'vertical') {
+      target[index].style.transform = 'translate3d(0px, ' + positionY + 'px, 0px)';
+    }
+    else {
+      var positionX = window.pageYOffset * target[index].dataset.ratex;
+      target[index].style.transform = 'translate3d(' + positionX + 'px, ' + positionY + 'px, 0px)';
+    }
+  }
+});
