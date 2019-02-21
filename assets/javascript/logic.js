@@ -6,6 +6,8 @@ $(document).ready(function () {
   //materialize parallax
   $('.parallax').parallax();
 
+  $('.collapsible').collapsible();
+
   //for typed.js elements
   var typed = new Typed("#typedHeader", {
     strings: ["Hi, I'm Chancy..."],
