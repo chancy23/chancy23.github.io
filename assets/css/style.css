@@ -145,16 +145,32 @@ body {
 #resume {
     margin-top: 2%;
     width: 80%;
-    /* box-sizing: border-box; */
 }
 
 #main {
     background-color: #fff;
     padding: 0 2%;
+    z-index: 1000000;
 }
 
 #contact {
     background-color: #fff;
+
+}
+
+.pin-top {
+    position: relative;
+  }
+
+.pin-bottom {
+    position: relative;
+}
+
+.pinned {
+    position: fixed !important;
+    /* z-index: -1000; */
+    width: 20%;
+    padding-right: 2%
 }
 
 #resumePortrait {
@@ -179,21 +195,36 @@ hr {
     width: 75%;
 }
 
+a {
+    color: #73AACC;
+}
+
 .collapsible-body {
     background-color: rgb(230, 230, 230);
 }
 
-/* #mainRow {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    height: 1000px;
-} */
-
-
 /* better readablity on small screen */
+@media only screen and (min-width: 1024px) {
+    .smShowContact {
+        display: none;
+    }
+    .lgShowContact {
+        display: inline-block;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     #resume {
         width: 95%;
+    }
+    .pinned {
+        width: 23%;
+    }
+    .smShowContact {
+        display: inline-block;
+    }
+    .lgShowContact {
+        display: none;
     }
 }
 
@@ -201,6 +232,13 @@ hr {
     #portrait {
         max-width: 100%;
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .pinned,
+    .pin-bottom {
+        display: none;
     }
 }
 

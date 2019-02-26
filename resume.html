@@ -14,57 +14,71 @@
 </head>
 
 <body>
-        <nav>
-                <div class="nav-wrapper">
-                  <div class="container">
-                    <a href="./index.html" class="brand-logo">Chancy Leath</a>
-                    <a href="#" data-target=mobileNav class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                      <!-- <li><a href="https://drive.google.com/file/d/1JmX93ACZ87Lr2JIJN9x-kGwYwh7JfveX/view?usp=sharing" target="_blank">Resume</a></li> -->
-                      <li><a href="./index.html">Home</a></li>
-                      <li><a href="#contactInfo">Contact</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-              <!-- navbar on mobile (sideNav) -->
-              <ul class="sidenav" id="mobileNav">
-                    <li><a class="sidenav-close" href="./index.html">Home</a></li>
-                    <li><a class="sidenav-close" href="#contactInfo">Contact</a></li>
-                    <li><a class="sidenav-close" href="#!">Exit</a></li>
-              </ul>
-    <!-- back to home button or link -->
+    <nav>
+        <div class="nav-wrapper">
+            <div class="container">
+            <a href="./index.html" class="brand-logo">Chancy Leath</a>
+            <a href="#" data-target=mobileNav class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar on mobile (sideNav) -->
+    <ul class="sidenav" id="mobileNav">
+        <li><a class="sidenav-close" href="./index.html">Home</a></li>
+        <li><a class="sidenav-close" href="#!">Exit</a></li>
+    </ul>
+
     <div class='container' id="resume">
         <div class='row'>
-            <div class='col s12 m3' data-direction='vertical' data-rateY='1' id="contact">
-                <img id='resumePortrait' src="./assets/images/chancyleath.jpg" alt="Chancy Leath">
-            
-            <div>
-                <ul>
-                    <li><i class="fas fa-mobile-alt"></i> 801-891-2965</li>
-                    <li><i class="fas fa-map-marked"></i> Croydon, Utah</li>
-                    <li><i class="fas fa-envelope"></i> chancyleath@gmail.com</li>
-                    <li><i class="fas fa-desktop"></i> https://chancy23.github.io</li>
-                    <li><i class="fab fa-linkedin"></i> www.linkedin.com/in/chancy-leath</li>
-                    <li><i class="fab fa-github-square"></i> https://github.com/chancy23</li>
-                </ul>
+            <div class='col s12 m3' id="contact">
+                <div class="pushpin" id="contactContent">
+                    <div>
+                        <img id='resumePortrait' src="./assets/images/chancy_resume_photo.jpeg" alt="Chancy Leath">
+                    </div>
+                    <!-- contact area on large screens -->
+                    <div class="lgShowContact">
+                        <ul>
+                            <li><i class="fas fa-mobile-alt"></i> 801-891-2965</li>
+                            <li><i class="fas fa-map-marked"></i> Croydon, Utah</li>
+                            <li><a href="mailto:chancyleath@gmail.com"><i class="fas fa-envelope"></i> chancyleath@gmail.com</a></li>
+                            <li><a href="https://www.linkedin.com/in/chancy-leath"><i class="fab fa-linkedin"></i> www.linkedin.com/in/chancy-leath</a></li>
+                            <li><a href="https://github.com/chancy23"><i class="fab fa-github-square"></i> https://github.com/chancy23</a></li>
+                        </ul>
+                        <div>
+                            <a href="https://drive.google.com/file/d/1-NETTmqT2qhbx0MTt6dPttUDLg_vXIi0/view?usp=sharing" target="_blank"><i class="fas fa-print"></i> Print Resume</a>
+                        </div>
+                    </div>
+                    <!-- contact area on small screens -->
+                    <div class="row smShowContact" style="width:100%">
+                        <div class="col s6 m12" style="width:140px;margin-right:10%">
+                            <ul >
+                                <li><i class="fas fa-mobile-alt"></i> 801-891-2965</li>
+                                <li><i class="fas fa-map-marked"></i> Croydon, Utah</li>
+                            </ul>
+                        </div>
+                        <div class="col s6 m12" style="width:170px">
+                            <a class="contactIcon" href="mailto:chancyleath@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a class="contactIcon" href="https://www.linkedin.com/in/chancy-leath"><i class="fab fa-linkedin"></i></a>
+                            <a class="contactIcon" href="https://github.com/chancy23"><i class="fab fa-github-square"></i></a>
+                            <a class="contactIcon" href="https://drive.google.com/file/d/1-NETTmqT2qhbx0MTt6dPttUDLg_vXIi0/view?usp=sharing" target="_blank"><i class="fas fa-print"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div><a href="https://drive.google.com/file/d/1JmX93ACZ87Lr2JIJN9x-kGwYwh7JfveX/view?usp=sharing" target="_blank">Printable Version</a></div>
-        </div>
 
-            <div class='col s12 m9' data-direction='vertical' data-rateY='-1' id='main'>
+            <div class='col s12 m9' id='main'>
                 <div class="row" id='overview'>
                     <h5 class="resumeSectionHead" style="margin-top:0">Summary</h5>
                     <div class="col s12">
-                        <p>Detail-oriented full stack software engineer with 10+ years of leadership, project and product
+                        <p>Detail-oriented full web developer with 10+ years of leadership, project and product
                             management in the wireless telecommunications industry. Passionate about creating mobile
-                            responsive web
-                            applications with excellent design and usability, using modern libraries and frameworks.
-                            Extensive experience with business
-                            process mapping, tool creation, and project tracking and reporting. Highly skilled in Agile
+                            responsive web applications with excellent design and usability.
+                            Extensive experience with business process mapping, tool creation, and project tracking and reporting. Highly skilled in Agile
                             methodology, project and product management and system/tool usability. Excellent at driving
-                            projects from
-                            inception to completion and beyond.
+                            projects from inception to completion and beyond.
                         </p>
                     </div>
                 </div>
@@ -74,12 +88,11 @@
                         <h5 class="resumeSectionHead">Technical Skills</h5>
                         <p>
                             Highly skilled user of HTML5, CSS3 (including Materialize and Bootstrap), JavaScript/jQuery,
-                            ReactJS, NodeJS, NPM, ExpressJS, Handlebars, MongoDB/Mongoose, MySQL/Sequelize, JSON, REST,
-                            MVC,
-                            Git, and Visual Studio Code.
+                            ReactJS, NodeJS, NPM, ExpressJS, Handlebars, Firebase, MongoDB/Mongoose, MySQL/Sequelize, JSON, REST,
+                            MVC,and Git Version Control.
                         </p>
                         <p>
-                            Proficient in Microsoft Office, Microsoft Project, Clarity, Jira, Google GSuite, Trello.
+                            Proficient in Microsoft Office, Microsoft Project, Clarity, Jira, Google GSuite, Trello, and Visual Studio Code.
                         </p>
                     </div>
                 </div>
@@ -314,7 +327,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script> -->
     <script src="./assets/javascript/logic.js"></script>
 </body>
 
